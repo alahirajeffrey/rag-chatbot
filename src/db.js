@@ -3,7 +3,7 @@ const { Pool } = require("pg");
 // init pg pool
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  onConnect: () => console.log("Connected to pg vector"),
+  onConnect: () => console.log("Connected to postgres"),
 });
 
 // init database
